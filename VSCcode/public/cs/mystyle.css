@@ -1,0 +1,169 @@
+body{
+    background-color: #fbf5f5;
+}
+
+a, h1, h2, h3, button, label{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button{
+    font-size: 18px;
+}
+
+.topnav {
+    overflow: auto;
+    white-space: nowrap;
+    background-color: #ee918a;
+}
+
+.topnav a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: #d04c43;
+    color: black;
+}
+
+.topnav a.current{
+    background-color: #f34d41;
+    color: black;
+}
+
+.imageDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 150px;
+    height: 200px;
+}
+
+img{
+    display: block;
+    max-width: 150px;
+    max-height: 200px;
+}
+
+select{
+    width: 170px;
+    place-content: center;
+    border: 1px solid #d04c43;
+    border-radius: 5px;
+    background-color: #d04c43;
+    color: #fbf5f5;
+}
+
+.left{
+    margin-left: 10px;
+}
+
+.fixedright{
+    position: fixed;
+    right: 10px;
+}
+
+.center{
+    margin: auto;
+}
+
+.fill{
+    width: 100%;
+}
+
+.standardheight{
+    height: 40px;
+}
+
+.lighter{
+    font-weight: 400;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.border{
+    border: 1.5px solid #f34d41;
+}
+
+.filterform{
+    border: none;
+    background-color: #fbf5f5;
+}
+
+.dynamicList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+}
+
+.dynamicList > div{
+    margin: 10px;
+    border: 1px solid #f34d41;
+    border-radius: 2%;
+    overflow: hidden;
+    width: 300px;
+    min-height: 300px;
+    padding: 5px;
+}
+
+.dynamicList > div > h3{
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+button > a{
+    color: #fbf5f5;
+    text-decoration: none;
+}
+
+button{
+    border: 1px solid #d04c43;
+    border-radius: 5px;
+    background-color: #d04c43;
+    color: #fbf5f5;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+form{
+    width: max-content;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #ee918a;
+}
+
+input{
+    width: 170px;
+    border: 1px solid #d04c43;
+    border-radius: 5px;
+    background-color: #fbf5f5;
+    color: black;
+}

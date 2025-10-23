@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending machines</title>
+        <link rel="stylesheet" href="cs/mystyle.css">
+        <script src="js/vendingMachine.js"></script>
+    </head>
+    <body onload="loadVendingMachineData()">
+        <div class="topnav">
+            <a class="current" href="main_page.html">Vending Machines</a>
+            <a href="item_list.html">Items List</a>
+        </div>
+        <h2 class="inline">Vending Machines</h2>
+        <select class="inline" id="school" name="school" onchange="loadVendingMachineFilterData(this.value)">
+            <option value="All">All Schools</option>
+            <option value="Applied Science">Applied Science</option>
+            <option value="Business">Business</option>
+            <option value="Design">Design</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Humanities & Social Sciences">Humanities & Social Sciences</option>
+            <option value="informatics & IT">Informatics & IT</option>
+        </select>
+        <div id="dynamicVendingMachineDataList" class="dynamicList">
+            <div>
+                <a><h3>Block 1</h3>
+                <h3>Floor 1</h3>
+                <h3>Payment Methods:</h3>
+                <h3>Method 1 Method 2</h3></a>
+            </div>
+            <div>
+                <a><h3>Block 2</h3>
+                <h3>Floor 2</h3>
+                <h3>Payment Methods:</h3>
+                <h3>Method 1 Method 3</h3></a>
+            </div>
+        </div>
+    </body>
+</html>

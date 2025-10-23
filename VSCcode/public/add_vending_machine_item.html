@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending machines</title>
+        <link rel="stylesheet" href="cs/mystyle.css">
+        <script src="js/vendingMachine.js"></script>
+    </head>
+    <body onload="loadVendingMachineAddItemData()">
+        <div class="topnav fill">
+            <a href="main_page.html">Vending Machines</a>
+            <a href="item_list.html">Items List</a>
+            <a id="backButton" class="fixedright">Back</a>
+        </div>
+        <h2 id="vendingMachineId" class="inline">Adds Item to Vending Machine</h2>
+        <form id="filterForm" class="inline filterform" onsubmit="loadVendingMachineSearchAddItemData(); return false">
+            <input type="text" id="searchbar" name="searchbar" maxlength="100" placeholder="Enter name of item">
+            <button id="order" name="order" value="unordered" onclick="changeOrderButton()">Order cost</button>
+            <button type="submit">Filter</button>
+        </form>
+        <div id="dynamicVendingMachineAddItemDataList" class="dynamicList">
+            <div>
+                <h3>Image 1</h3>
+                <h3>Name 1</h3>
+                <h3>Cost 1</h3>
+                <h3 class="lighter">Availability 1</h3>
+                <div class="flex">
+                    <button>Add Item</button>
+                </div>
+            </div>
+            <div>
+                <h3>Image 2</h3>
+                <h3>Name 2</h3>
+                <h3>Cost 2</h3>
+                <h3 class="lighter">Availability 2</h3>
+                <div class="flex">
+                    <button>Add Item</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending machines</title>
+        <link rel="stylesheet" href="cs/mystyle.css">
+        <script src="js/vendingMachine.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="main_page.html">Vending Machines</a>
+            <a href="item_list.html">Items List</a>
+            <a href="item_list.html" class="fixedright">Back</a>
+        </div>
+        <h2>Insert Item</h2>
+        <form id="insertForm" method="post" class="border" onsubmit="addItemData(); return false">
+            <label for="name_tb">Name:</label><br>
+            <input type="text" id="name_tb" name="name" minlength="3" maxlength="50" required><br><br>
+
+            <label for="cost_tb">Cost:</label><br>
+            <input type="number" id="cost_tb" name="cost" step="0.01" min="0.01" max="10" placeholder="0.00" required><br><br
+
+            <label for="image_url_tb">Image URL:</label><br>
+            <input type="text" id="image_url_tb" name="image_url" maxlength="255"><br><br>
+
+            <label for="availability_tb">Availability<br>(1 for available and 0 for not available):</label><br>
+            <input type="number" id="availability_tb" name="availability" step="1" min="0" max="1" required><br><br>
+
+            <label for="quantity_tb">Quantity:</label><br>
+            <input type="number" id="quantity_tb" name="quantity" step="1" min="0" required><br><br>
+
+            <button type="submit">Add Item</button>
+        </form>
+    </body>
+</html>
